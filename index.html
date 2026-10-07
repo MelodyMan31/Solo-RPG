@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galasean Chronicles | Character Sheet</title>
+
+    <link rel="stylesheet" href="character.css">
+</head>
+
+<body>
+<main>
+    <!-- HEADER -->
+    <header class="sheet-header">
+        <div>
+            <p class="eyebrow">Galasean Chronicles</p>
+
+            <input
+                class="character-name"
+                type="text"
+                placeholder="Character Name"
+            >
+
+            <div class="character-details">
+                <select>
+                    <option>Fighter</option>
+                    <option>Ranger</option>
+                    <option>Cleric</option>
+                    <option>Rogue</option>
+                    <option>Monk</option>
+                    <option>Wizard</option>
+                    <option>Paladin</option>
+                    <option>Barbarian</option>
+                    <option>Druid</option>
+                    <option>Warlock</option>
+                </select>
+
+                <input
+                    type="text"
+                    placeholder="Hometown"
+                    value="Riorbella"
+                >
+            </div>
+        </div>
+
+        <div class="level-box">
+            <span>Level</span>
+            <input type="number" value="1" min="1" max="10">
+        </div>
+    </header>
+
+    <!-- RESOURCES -->
+    <section class="resources">
+        <div class="resource">
+            <label>Health</label>
+            <div>
+                <input type="number" value="12">
+                <span>/</span>
+                <input type="number" value="12">
+            </div>
+        </div>
+
+        <div class="resource">
+            <label>Focus</label>
+            <div>
+                <input type="number" value="3">
+                <span>/</span>
+                <input type="number" value="3">
+            </div>
+        </div>
+
+        <div class="resource">
+            <label>Gold</label>
+            <input type="number" value="10">
+        </div>
+
+        <div class="resource">
+            <label>Reputation</label>
+            <input type="number" value="0">
+        </div>
+    </section> 
+
+    <!-- ATTRIBUTES -->
+    <section class="panel">
+        <h2>Attributes</h2>
+
+        <div class="stats">
+            <label>
+                <span>Might</span>
+                <input type="number" value="3">
+            </label>
+
+            <label>
+                <span>Guard</span>
+                <input type="number" value="3">
+            </label>
+            
+            <label>
+                <span>Magic</span>
+                <input type="number" value="0">
+            </label>
+
+            <label>
+                <span>Sanctity</span>
+                <input type="number" value="1">
+            </label>
+
+            <label>
+                <span>Scouting</span>
+                <input type="number" value="2">
+            </label>
+
+            <label>
+                <span>Thievery</span>
+                <input type="number" value="0">
+            </label>
+
+            <label>
+                <span>Charisma</span>
+                <input type="number" value="1">
+            </label>
+
+            <label>
+                <span>Lore</span>
+                <input type="number" value="1">
+            </label>
+        </div>
+    </section>
+
+    <!-- EQUIPMENT -->
+    <section class="panel">
+        <h2>Equipment</h2>
+
+        <div class="equipment-grid">
+            <div class="equipment-card">
+                <span class="equipment-label">Weapon</span>
+                <input
+                    class="equipment-name"
+                    type="text"
+                    value="Longsword"
+                >
+
+                <div class="equipment-info">
+                    <label>
+                        Rank
+                        <select class="rank-select">
+                            <option value="E">E</option>
+                            <option value="D" selected>D</option>
+                            <option value="C">C</option>
+                            <option value="B">B</option>
+                            <option value="A">A</option>
+                            <option value="S">S</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Die
+                        <input class="rank-die" type="text" value="d6" readonly>
+                    </label>
+                </div>
+            </div>
+
+            <div class="equipment-card">
+                <span class="equipment-label">Armor</span>
+                <input
+                    class="equipment-name"
+                    type="text"
+                    value="Leather Armor"
+                >
+
+                <div class="equipment-info">
+                    <label>
+                        Rank
+                        <select class="rank-select">
+                            <option value="E">E</option>
+                            <option value="D" selected>D</option>
+                            <option value="C">C</option>
+                            <option value="B">B</option>
+                            <option value="A">A</option>
+                            <option value="S">S</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Die
+                        <input class="rank-die" type="text" value="d6" readonly>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHARACTER INFORMATION -->
+    <section class="two-column">
+        <div class="panel">
+            <h2>Abilities</h2>
+            <textarea
+                placeholder="Class Abilities, Talents, Passives..."
+            ></textarea>
+        </div>
+
+        <div class="panel">
+            <h2>Inventory</h2>
+            <textarea>Minor Healing Potion x3</textarea>
+        </div>
+
+        <div class="panel">
+            <h2>Active Quests</h2>
+            <textarea
+                placeholder="Current Quests, Objectives..."
+            ></textarea>
+        </div>
+
+        <div class="panel">
+            <h2>Keywords</h2>
+            <textarea
+                placeholder="Keywords"
+            ></textarea>
+        </div>
+    </section>
+
+    <!-- NOTES -->
+    <section class="panel">
+        <h2>Adventure Notes</h2>
+        <textarea
+            placeholder="NPCs, Discoveries, Rumors..."
+        ></textarea>
+    </section>
+</main>
+
+<script src="character.js"></script>
+</body>
+</html>
