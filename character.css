@@ -388,4 +388,15 @@ textarea {
     .level-box {
         width: 100%;
     }
+
+    .character-details {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .character-details select,
+    .character-details input {
+        width: 100%;
+        min-width: 0;
+    }
 }
